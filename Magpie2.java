@@ -29,6 +29,8 @@ public class Magpie2
         String response = "";
         if (statement.indexOf("no") >= 0){
             response = "Why so negative?";
+        }else if(statement.indexOf("Hello darkness my old friend.") >= 0){
+            response = "I've come to talk to you again.";
         }else if (statement.indexOf("what") >= 0){
             response = "Jiberish!";
         }else if (statement.indexOf("mother") >= 0
@@ -47,6 +49,12 @@ public class Magpie2
         || statement.indexOf("center") >= 0 
         || statement.indexOf("right") >= 0){
             response = "Cool. I catch.";
+        }else if(statement.indexOf("dog") >= 0
+        || statement.indexOf("cat") >= 0
+        || statement.indexOf("fish") >= 0
+        || statement.indexOf("bird") >= 0
+        || statement.indexOf("pet") >= 0){
+            response = "Tell me about your pet(s).";
         }else if (statement.indexOf("Mr. Wiebe") >=  0){
             response = "Tell me more about your awesome teacher.";
         }else if (statement.indexOf("baseball") >= 0){
@@ -62,7 +70,7 @@ public class Magpie2
      */
     private String getRandomResponse()
     {
-        final int NUMBER_OF_RESPONSES = 4;
+        final int NUMBER_OF_RESPONSES = 8;
         double r = Math.random();
         int whichResponse = (int)(r * NUMBER_OF_RESPONSES);
         String response = "";
@@ -74,6 +82,14 @@ public class Magpie2
             response = "Do you really think so?";
         }else if (whichResponse == 3){
             response = "You don't say.";
+        }else if (whichResponse == 4){
+            response = "Get off my computer kid! You're going to break something.";
+        }else if (whichResponse == 5){
+            response = "I don't know what you are saying.";
+        }else if (whichResponse == 6){
+            response = "STOP TYPING RANDOM STUFF ON THE KEYBOARD! PLEASE!";
+        }else if (whichResponse == 7){
+            response = "Ich kann nicht verstanden dich. Du musst ein Dummkopf sein.";
         }
         return response;
     }
