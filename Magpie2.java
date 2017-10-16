@@ -93,4 +93,10 @@ public class Magpie2
         }
         return response;
     }
+    private static void QuestionAnswers(){
+        /**
+         * 1) The code responds to the keyword as if it were not surrounded by other letters. The problem is you could get an undesired response from the bot because of the
+         * sentence not being within the context.
+         */
+    }
 }

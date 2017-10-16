@@ -8,4 +8,6 @@ comment1.text=\r\n\ Gives\ a\ response\ to\ a\ user\ statement\r\n\ \r\n\ @param
 comment2.params=
 comment2.target=java.lang.String\ getRandomResponse()
 comment2.text=\r\n\ Pick\ a\ default\ response\ to\ use\ if\ nothing\ else\ fits.\r\n\ @return\ a\ non-committal\ string\r\n
-numComments=3
+comment3.params=
+comment3.target=void\ QuestionAnswers()
+numComments=4

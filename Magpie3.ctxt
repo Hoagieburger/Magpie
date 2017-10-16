@@ -14,4 +14,6 @@ comment3.text=\r\n\ Search\ for\ one\ word\ in\ phrase.\ The\ search\ is\ not\ c
 comment4.params=
 comment4.target=java.lang.String\ getRandomResponse()
 comment4.text=\r\n\ Pick\ a\ default\ response\ to\ use\ if\ nothing\ else\ fits.\r\n\ \r\n\ @return\ a\ non-committal\ string\r\n
-numComments=5
+comment5.params=
+comment5.target=void\ keywords()
+numComments=6
